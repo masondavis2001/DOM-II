@@ -66,3 +66,12 @@ navigation.forEach(navigation => {
         navigation.style.color = 'purple';
     })
 })
+
+// preventDefault
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(navLink => {
+    navLink.addEventListener('click', (e) => {
+        e.preventDefault();
+    })
+})
+
